@@ -1,0 +1,184 @@
+.profession {
+  position: relative;
+  padding: 5rem 0;
+  background: $abyssal;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: url('#{$base-url}/assets/icons/flower.svg') no-repeat;
+    height: 10.5rem;
+    width: 10.5rem;
+    bottom: 0.625rem;
+    right: 0;
+    background-size: contain;
+    z-index: 1;
+  }
+
+  &__section {
+    display: flex;
+    flex-direction: row;
+    gap: 1.875rem;
+
+    &-title {
+      position: relative;
+      padding: 1.3125rem 1.875rem;
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 3.625rem;
+      border-radius: 1.25rem;
+      width: auto;
+      margin-bottom: 5rem;
+      border: 1px solid $white;
+    }
+
+    &-image {
+      width: 5.9375rem;
+      height: 5.9375rem;
+    }
+  }
+
+
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.6875rem;
+  }
+
+  &__item {
+    width: calc(25% - 0.6875rem);
+  }
+
+  &__item-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 2.5rem 2.5rem 0 0;
+    display: block;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.3125rem 1.53125rem 3.8125rem 1.53125rem;
+    gap: 0.625rem;
+    width: 100%;
+    height: 10em;
+    background-color: $white;
+    border-radius: 0 0 2.5rem 2.5rem;
+
+    &-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      line-height: 1.5rem;
+      width: 100%;
+    }
+
+    &-text {
+      font-size: 1rem;
+      line-height: 1.1875rem;
+      font-weight: 400;
+      width: 100%;
+      color: $abyssal;
+    }
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .profession {
+    padding: 5.313rem 0;
+
+    &::after {
+      width: 9.938rem;
+      height: 9.938rem;
+    }
+
+    &__section {
+      row-gap: 1.313rem;
+
+      &-title {
+        font-size: 2.25rem;
+        line-height: 2.688rem;
+        padding: 1.25rem 1.875rem;
+        width: auto;
+        margin-bottom: 4.063rem;
+      }
+
+    &-image {
+      width: 4.938rem;
+      height: 4.938rem;
+    }
+    }
+
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+
+    .profession__item {
+      width: calc(100% - 0.6875rem);
+      gap: 2.813rem;
+  }
+  }
+}
+
+@media (max-width: 460px) {
+  .profession {
+    padding: 2.188rem 0 6.625rem 0;
+
+    &::after {
+      background: url('#{$base-url}/assets/icons/flower-mobile.svg') no-repeat;
+      width: 5.498em;
+      bottom: 0rem;
+      right: 0rem;
+    }
+
+    &__container {
+      padding: 1.313rem 1.781rem 1.938rem ;
+      gap: 0.625rem;
+
+      &-title {
+        line-height: 1.5rem;
+        font-size: 1.25rem;
+      }
+    }
+
+    &__section {
+      row-gap: 0.388rem;
+
+      &-title {
+        font-size: 1.513rem;
+        line-height: 1.813rem;
+        padding: 0.625rem 1.313rem;
+        width: auto;
+        margin-bottom: 0;
+        border-radius: 0.75rem;
+      }
+
+    &-image {
+      display: flex;
+      align-self: center;
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+      border-radius: 2.5rem;
+      margin-top: 2.125rem;
+    }
+
+    .profession__item {
+      width: 100%;
+      gap: 2.813rem;
+  }
+  }
+}

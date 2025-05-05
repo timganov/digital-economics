@@ -1,0 +1,236 @@
+.promo-credit {
+  position: relative;
+  padding: 5rem 0;
+  background: url('#{$base-url}/assets/icons/credit-background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+
+  &__container {
+    padding: 0 2.4375rem;
+    display: flex;
+    gap: 1.9375rem;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 3.625rem;
+      text-align: center;
+      padding-bottom: 1.75rem;
+    }
+
+
+
+    .promo-credit__title {
+      position: relative;
+      display: inline-block;
+      width: fit-content;
+
+      img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 13.25rem;
+        height: auto;
+      }
+    }
+
+    .promo-credit-span {
+      display: inline-block;
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 3.625rem;
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    .promo-credit-text {
+      display: inline-block;
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 3.625rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .promo-credit-marked {
+      display: inline-block;
+      position: relative;
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 3.625rem;
+    }
+    
+    .promo-credit-marked::before {
+      content: "";
+      position: absolute;
+      background-image: url('#{$base-url}/assets/icons/stripe.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 100%;
+      height: 1.76rem;
+      bottom: -1.438rem;
+      left: 0;
+    }
+    
+  
+
+    
+
+    p {
+      font-size: 2.25rem;
+      font-weight: 400;
+      line-height: 2.6875rem;
+      text-align: center;
+    }
+  }
+
+  button {
+    display: inline-block;
+    padding: 1rem 2.75rem;
+    background-color: $white;
+    border-radius: 2.625rem;
+    border: none;
+    font-style: inherit;
+  }
+
+  a {
+    color: $black;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.375rem;
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 1024px) {
+  .promo-credit {
+    padding: 3.219rem 0;
+
+    &__container {
+      padding: 0 0.938rem;
+      gap: 1.063rem;
+    }
+
+    
+  .promo-credit-span {
+    display: inline-block;
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 2.688rem;
+    text-align: center;
+    margin-bottom: 0.3rem;
+  }
+  
+  .promo-credit-text {
+    display: inline-block;
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 2.688rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .promo-credit-marked {
+    display: inline-block;
+    position: relative;
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 2.688rem;
+  }
+  
+  .promo-credit-marked::before {
+    content: "";
+    position: absolute;
+    background-image: url('#{$base-url}/assets/icons/stripe.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 1.692rem;
+    bottom: -1.438rem;
+    left: 0;
+  }
+
+  p {
+    font-size: 1.5rem;
+    line-height: 1.813rem;
+  }
+
+  button {
+    padding: 1rem 2.688rem;
+  }
+  a {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    
+  }
+  }
+
+  
+}
+
+@media (max-width: 460px) {
+  .promo-credit {
+    padding: 3.375rem 0;
+    background: url('#{$base-url}/assets/img/credit-background-mobile.png');
+    background-size: cover;
+
+    &__container {
+      padding: 0;
+      gap: 1.625rem;
+    }
+
+    
+  .promo-credit-span {
+    display: inline-block;
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 2.688rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .promo-credit-text {
+    display: inline-block;
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 2.688rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .promo-credit-marked {
+    display: inline-block;
+    position: relative;
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 2.688rem;
+  }
+  
+  .promo-credit-marked::before {
+    content: "";
+    position: absolute;
+    background-image: url('#{$base-url}/assets/icons/stripe.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 1.692rem;
+    bottom: -1.438rem;
+    left: 0;
+  }
+
+  p {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+
+  button {
+    padding: 0.5rem 2.688rem;
+  }
+  a {
+    font-size: 1rem;
+    line-height: 1.188rem;
+    
+  }
+  }
+}

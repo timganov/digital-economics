@@ -1,0 +1,43 @@
+.footer {
+  padding: 3.8125rem 0 2.875rem 0;
+  background: $abyssal;
+
+  &__section {
+    display: flex;
+    justify-content: center;
+
+    &-link {
+      font-size: 1.25rem;
+      font-weight: 300;
+      line-height: 1.5rem;
+    }
+  }
+}
+
+@media (max-width: 1024px ) {
+  .footer {
+    padding: 2.875rem 0 ;
+
+    &__section {
+
+      &-link {
+        font-size: 0.875rem;
+        line-height: 1.063rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .footer {
+    padding: 2.25rem 0 1.563rem 0;
+
+    &__section {
+
+      &-link {
+        font-size: 0.75rem;
+        line-height: 0.875rem;
+      }
+    }
+  }
+}

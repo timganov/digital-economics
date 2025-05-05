@@ -1,0 +1,140 @@
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  background-size: cover;
+   background-image: url('#{$base-url}/assets/icons/intro-img.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-top: 13.3125rem; 
+  padding-bottom: 6.75rem;   
+  background-color: $pearl-black;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 1.8125rem;          
+    margin-bottom: 3.5625rem; 
+  }
+
+  &__link-icon.icon {
+    background-image: url('#{$base-url}/assets/icons/economics-icon.png');
+  }
+
+  &__link-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.125rem;          
+    height: 3.125rem;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &__link-head {
+    font-size: 3rem;        
+    line-height: 3.625rem;    
+    font-weight: 700;
+  }
+
+  &__head-main {
+    font-size: 4rem;         
+    text-transform: uppercase;
+    line-height: 4.8125rem;   
+    margin-bottom: 2.8125rem; 
+  }
+
+  &__paragraph {
+    font-weight: 500;
+    font-size: 1.5rem;        
+    line-height: 1.8125rem;   
+  }
+
+  &__icon-img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .intro {
+    background-image: url('#{$base-url}/assets/img/intro-img__dekstop.png');
+    background-size: cover;
+    padding-top: 12.813rem;
+    padding-bottom: 6.125rem;
+
+    &__link {
+      gap: 0.938rem;
+      margin-bottom: 1.875rem;
+    }
+    
+
+    &__link-icon {
+      width: 2rem;
+      height: 2rem;
+    }
+
+    &__link-head {
+      font-size: 2rem;
+    }
+
+    &__head-main{
+      font-size: 2.5rem;
+      line-height: 3rem;
+      margin-bottom: 1.875rem;
+    }
+
+    &__paragraph {
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+    }
+
+    &__icon-img {
+      width: 10.875rem;
+      height: 10.875rem; 
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .intro {
+    background-image: url('#{$base-url}/assets/img/intro-img__dekstop.png');
+    background-size: cover;
+    padding-top: 1.125rem;
+    padding-bottom: 3.125rem;
+
+    &__link {
+      gap: 0.313rem;
+      margin-bottom: 0.875rem;
+    }
+    
+
+    &__link-icon {
+      width: 1.313rem;
+      height: 1.313rem;
+    }
+
+    &__link-head {
+      font-size: 1.25rem;
+    }
+
+    &__head-main{
+      font-size: 1.688rem;
+      line-height: 2rem;
+      margin-bottom: 0.938rem;
+    }
+
+    &__paragraph {
+      font-size: 1rem;
+      line-height: 1.188rem;
+    }
+
+    &__icon-img {
+      width: 5.125rem;
+      height: 5.125rem; 
+    }
+  }
+}

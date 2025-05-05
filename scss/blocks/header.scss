@@ -1,0 +1,56 @@
+.header {
+  background: rgba(0, 0, 0, 0.35);
+  padding: 2.5rem 0 1.75rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  &__logo {
+ 
+    img {
+      width: 9.3125rem;
+      height: 3.125rem;
+      display: inline-block
+    }
+  }
+}
+
+
+@media (max-width: 1024px) {
+   .header {
+    padding: 2.5rem 0 1.75rem 0;
+
+
+    &__logo {
+
+      img {
+        width: 9.313rem;
+        height: 3.125rem;
+      }
+      
+    }
+   }
+
+ 
+}
+
+@media (max-width: 460px) {
+  .header {
+
+    padding: 1.938rem 0 1.839rem 0;
+    position: static;
+    opacity: 0.9;
+    background-color: #000;
+
+    &__logo {
+
+      img {
+        width: 6.875rem;
+        height: 2.286rem;
+      }
+      
+    }
+  }
+}

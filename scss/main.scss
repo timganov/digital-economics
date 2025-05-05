@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+@import 'reset';
+@import 'variables';
+@import 'fonts';
+@import 'mixins';
+@import 'core';
+
+@import 'blocks/header.scss';
+@import 'blocks/intro.scss';
+@import 'blocks/what.scss';
+@import 'blocks/vision.scss';
+@import 'blocks/promo.scss';
+@import 'blocks/learn.scss';
+@import 'blocks/profession.scss';
+@import 'blocks/credit.scss';
+@import 'blocks/contacts.scss';
+@import 'blocks/footer.scss';

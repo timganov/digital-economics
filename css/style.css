@@ -1,0 +1,1243 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "TT Travels";
+  src: url("../fonts/TTTravels-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT Travels";
+  src: url("../fonts/TTTravels-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT Travels";
+  src: url("../fonts/TTTravels-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT Travels";
+  src: url("../fonts/TTTravels-DemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT Travels";
+  src: url("../fonts/TTTravels-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "TT Travels", sans-serif;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.wrap {
+  min-width: 320px;
+  max-width: 1660px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 3.75rem;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+p,
+span,
+a {
+  color: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 90%;
+  }
+}
+@media (max-width: 1024px) {
+  .wrap {
+    padding: 0 6.375rem;
+  }
+}
+@media (max-width: 900px) {
+  html {
+    font-size: 80%;
+  }
+}
+@media (max-width: 730px) {
+  html {
+    font-size: 65%;
+  }
+}
+@media (max-width: 560px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 460px) {
+  html {
+    font-size: 100%;
+  }
+  .wrap {
+    padding: 0 2.813rem;
+  }
+  .learn-wrap {
+    padding: 0 1.813rem;
+  }
+  .credit-wrap {
+    padding: 0 1.375rem;
+  }
+}
+.header {
+  background: rgba(0, 0, 0, 0.35);
+  padding: 2.5rem 0 1.75rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+.header__logo img {
+  width: 9.3125rem;
+  height: 3.125rem;
+  display: inline-block;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    padding: 2.5rem 0 1.75rem 0;
+  }
+  .header__logo img {
+    width: 9.313rem;
+    height: 3.125rem;
+  }
+}
+@media (max-width: 460px) {
+  .header {
+    padding: 1.938rem 0 1.839rem 0;
+    position: static;
+    opacity: 0.9;
+    background-color: #000;
+  }
+  .header__logo img {
+    width: 6.875rem;
+    height: 2.286rem;
+  }
+}
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  background-size: cover;
+  background-image: url("/economics-rudn/assets/icons/intro-img.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-top: 13.3125rem;
+  padding-bottom: 6.75rem;
+  background-color: #161A22;
+}
+.intro__link {
+  display: flex;
+  align-items: center;
+  gap: 1.8125rem;
+  margin-bottom: 3.5625rem;
+}
+.intro__link-icon.icon {
+  background-image: url("/economics-rudn/assets/icons/economics-icon.png");
+}
+.intro__link-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.125rem;
+  height: 3.125rem;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.intro__link-head {
+  font-size: 3rem;
+  line-height: 3.625rem;
+  font-weight: 700;
+}
+.intro__head-main {
+  font-size: 4rem;
+  text-transform: uppercase;
+  line-height: 4.8125rem;
+  margin-bottom: 2.8125rem;
+}
+.intro__paragraph {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.8125rem;
+}
+.intro__icon-img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+@media (max-width: 1024px) {
+  .intro {
+    background-image: url("/economics-rudn/assets/img/intro-img__dekstop.png");
+    background-size: cover;
+    padding-top: 12.813rem;
+    padding-bottom: 6.125rem;
+  }
+  .intro__link {
+    gap: 0.938rem;
+    margin-bottom: 1.875rem;
+  }
+  .intro__link-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+  .intro__link-head {
+    font-size: 2rem;
+  }
+  .intro__head-main {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin-bottom: 1.875rem;
+  }
+  .intro__paragraph {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+  .intro__icon-img {
+    width: 10.875rem;
+    height: 10.875rem;
+  }
+}
+@media (max-width: 460px) {
+  .intro {
+    background-image: url("/economics-rudn/assets/img/intro-img__dekstop.png");
+    background-size: cover;
+    padding-top: 1.125rem;
+    padding-bottom: 3.125rem;
+  }
+  .intro__link {
+    gap: 0.313rem;
+    margin-bottom: 0.875rem;
+  }
+  .intro__link-icon {
+    width: 1.313rem;
+    height: 1.313rem;
+  }
+  .intro__link-head {
+    font-size: 1.25rem;
+  }
+  .intro__head-main {
+    font-size: 1.688rem;
+    line-height: 2rem;
+    margin-bottom: 0.938rem;
+  }
+  .intro__paragraph {
+    font-size: 1rem;
+    line-height: 1.188rem;
+  }
+  .intro__icon-img {
+    width: 5.125rem;
+    height: 5.125rem;
+  }
+}
+.what {
+  position: relative;
+  background-image: url("/economics-rudn/assets/icons/background-gradient.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.what::after {
+  content: "";
+  position: absolute;
+  right: -0.875rem;
+  top: -13.6875rem;
+  width: 46rem;
+  height: 56.25rem;
+  background: url("/economics-rudn/assets/icons/metal-icon.svg") no-repeat;
+  background-size: contain;
+  z-index: 1;
+}
+.what__text {
+  padding: 4.9375rem 0;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.625rem;
+}
+
+@media (max-width: 1024px) {
+  .what::after {
+    width: 32.774rem;
+    height: 32.774rem;
+    right: -6.875rem;
+    top: -7.6875rem;
+  }
+  .what__text {
+    padding: 2.688rem 0;
+    font-size: 2.25rem;
+    line-height: 2.688rem;
+  }
+}
+@media (max-width: 460px) {
+  .what::after {
+    width: 11.374rem;
+    height: 11.374rem;
+    right: -2.875rem;
+    top: 3.3125rem;
+  }
+  .what__text {
+    padding: 1.5rem 0;
+    font-size: 1.5rem;
+    line-height: 1.813rem;
+  }
+}
+.vision {
+  background: #161A22;
+  padding: 5.5rem 0;
+}
+.vision__title {
+  font-size: 3rem;
+  line-height: 3.625rem;
+  margin-bottom: 2.625rem;
+}
+.vision__icon {
+  width: 4.375rem;
+  height: auto;
+}
+.vision__items {
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  gap: 2.25rem 2.5rem;
+  margin-bottom: 3.25rem;
+}
+.vision__item {
+  display: flex;
+  align-items: center;
+  gap: 1.875rem;
+  padding: 0.9375rem 1.875rem;
+  border: 1px solid #FFFFFF;
+  border-radius: 1.25rem;
+}
+.vision__item-full {
+  grid-column: 1/3;
+  width: 85%;
+}
+.vision__text {
+  color: #FFFFFF;
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 2.375rem;
+}
+.vision__footer {
+  display: flex;
+  align-items: center;
+  gap: 2.75rem;
+}
+.vision__footer-icon {
+  width: 6.25rem;
+  height: 6.25rem;
+  transform: rotate(180deg);
+}
+.vision__footer-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.8125rem;
+}
+
+@media (max-width: 1024px) {
+  .vision {
+    padding: 3.125rem 0;
+  }
+  .vision__title {
+    font-size: 2.25rem;
+    line-height: 2.688rem;
+    margin-bottom: 2.563rem;
+  }
+  .vision__icon {
+    width: 2.375rem;
+    height: 2.375rem;
+  }
+  .vision__items {
+    gap: 1.625rem 2.188rem;
+    margin-bottom: 2.313rem;
+  }
+  .vision__item {
+    padding: 0.969rem 1.578rem;
+    gap: 1.25rem;
+  }
+  .vision__text {
+    font-size: 1.28em;
+    line-height: 1.813rem;
+  }
+  .vision__footer {
+    gap: 1.625rem;
+  }
+  .vision__footer-icon {
+    width: 3.75rem;
+    height: 3.75rem;
+  }
+  .vision__footer-text {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+@media (max-width: 460px) {
+  .vision {
+    padding: 1.875rem 0;
+  }
+  .vision__title {
+    font-size: 1.5rem;
+    line-height: 1.813rem;
+    margin-bottom: 1.438rem;
+  }
+  .vision__icon {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+  .vision__items {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+  }
+  .vision__item {
+    padding: 0.906rem 1rem;
+    gap: 0.938rem;
+  }
+  .vision__item-full {
+    grid-column: 1/3;
+    width: 100%;
+  }
+  .vision__text {
+    font-size: 1rem;
+    line-height: 1.188rem;
+  }
+  .vision__footer {
+    gap: 0.688rem;
+  }
+  .vision__footer-icon {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+  .vision__footer-text {
+    font-size: 0.938rem;
+    line-height: 1.125rem;
+  }
+}
+.program-promo {
+  position: relative;
+  padding: 3.75rem 0;
+}
+.program-promo::after {
+  content: "";
+  position: absolute;
+  left: 0rem;
+  top: 12.25rem;
+  width: 27.4375rem;
+  height: 27.5625rem;
+  background: url("/economics-rudn/assets/icons/metal-abstraction.svg") no-repeat;
+  background-size: contain;
+  z-index: 1;
+}
+.program-promo__container {
+  display: flex;
+  flex-direction: row;
+  gap: 3.9375rem;
+}
+.program-promo__container img {
+  width: 33.0625rem;
+  height: 22.0625rem;
+}
+.program-promo__container p {
+  color: #171920;
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 2.375rem;
+  padding: 3.75rem 0;
+}
+
+@media (max-width: 1024px) {
+  .program-promo {
+    padding: 3.25rem 0;
+  }
+  .program-promo::after {
+    width: 19.625rem;
+    height: 19.744rem;
+    top: 10.25rem;
+  }
+  .program-promo__container img {
+    width: 22.813rem;
+    height: 15.25rem;
+  }
+  .program-promo__container p {
+    font-size: 1.5rem;
+    line-height: 1.813rem;
+    display: flex;
+    align-self: center;
+    padding: 0;
+  }
+}
+@media (max-width: 460px) {
+  .program-promo {
+    padding: 2.188rem 0;
+  }
+  .program-promo::after {
+    position: absolute;
+    width: 8.012rem;
+    height: 8.048rem;
+    top: 23.25rem;
+  }
+  .program-promo__container {
+    flex-direction: column;
+    gap: 1.625rem;
+  }
+  .program-promo__container img {
+    width: 17.688rem;
+    height: 11.813rem;
+    display: flex;
+    align-self: center;
+  }
+  .program-promo__container p {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    display: flex;
+    align-self: center;
+    padding: 0;
+  }
+}
+.learn {
+  position: relative;
+  padding: 5rem 0;
+  background: url("/economics-rudn/assets/icons/vision-background.png");
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+.learn__title {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.625rem;
+  text-align: right;
+  margin-bottom: 3.125rem;
+}
+.learn__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+.learn__item {
+  padding: 0.625rem 2.5rem;
+  background-color: #FFFFFF;
+  border-radius: 1.0625rem;
+}
+.learn__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+.learn__content.active {
+  max-height: 11.25rem;
+  opacity: 1;
+}
+.learn__content-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6875rem;
+  padding-top: 0.875rem;
+  border-top: 1px solid #191919;
+}
+.learn__content-item {
+  display: flex;
+  flex-direction: row;
+  gap: 0.6875rem;
+}
+.learn__content-item img {
+  width: 1.6875rem;
+  height: 1.6875rem;
+}
+.learn__content-item span {
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: #191919;
+}
+.learn__block-toggle-img {
+  transition: transform 0.3s ease;
+}
+.learn__block-toggle-img.rotate {
+  transform: rotate(180deg);
+}
+.learn__item p.learn__block-title {
+  color: #191919;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.8125rem;
+  margin: 0.625rem 0;
+}
+.learn__block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.learn__block-toggle {
+  border: none;
+  outline: none;
+  background-color: #FFFFFF;
+  padding: 0;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .learn {
+    padding: 3.75rem 0;
+    background: url("/economics-rudn/assets/img/vision-backgroud-mobile.png");
+    background-size: cover;
+  }
+  .learn__title {
+    margin-bottom: 1.25rem;
+    font-size: 1.5rem;
+  }
+  .learn__list {
+    margin-bottom: 1.25rem;
+  }
+  .learn__item {
+    padding: 0.625rem 2.5rem;
+  }
+  .learn__item p.learn__block-title {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    padding: 0.313rem 0;
+    width: 85%;
+  }
+  .learn__block-toggle-img {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+  .learn__content-item {
+    gap: 0.75rem;
+  }
+  .learn__content-item span {
+    font-size: 1rem;
+  }
+  .learn__content-item img {
+    width: 1.688rem;
+    height: 1.688rem;
+  }
+}
+@media (max-width: 460px) {
+  .learn {
+    padding: 2.188rem 0;
+  }
+  .learn__title {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    margin-bottom: 1.25rem;
+  }
+  .learn__list {
+    margin-bottom: 0.375rem;
+    gap: 0.625rem;
+  }
+  .learn__content-list {
+    gap: 0.625rem;
+    padding-top: 0.625rem;
+  }
+  .learn__item {
+    padding: 0.625rem 0.938rem;
+  }
+  .learn__item p.learn__block-title {
+    font-size: 0.875rem;
+    line-height: 1.063rem;
+    padding: 0.469rem 0;
+  }
+  .learn__block-toggle-img {
+    width: 2rem;
+    height: 2rem;
+  }
+  .learn__content-item {
+    gap: 0.75rem;
+  }
+  .learn__content-item span {
+    font-size: 0.813rem;
+    line-height: 1rem;
+  }
+  .learn__content-item img {
+    width: 1.688rem;
+    height: 1.688rem;
+  }
+}
+.profession {
+  position: relative;
+  padding: 5rem 0;
+  background: #171920;
+}
+.profession::after {
+  content: "";
+  position: absolute;
+  background: url("/economics-rudn/assets/icons/flower.svg") no-repeat;
+  height: 10.5rem;
+  width: 10.5rem;
+  bottom: 0.625rem;
+  right: 0;
+  background-size: contain;
+  z-index: 1;
+}
+.profession__section {
+  display: flex;
+  flex-direction: row;
+  gap: 1.875rem;
+}
+.profession__section-title {
+  position: relative;
+  padding: 1.3125rem 1.875rem;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.625rem;
+  border-radius: 1.25rem;
+  width: auto;
+  margin-bottom: 5rem;
+  border: 1px solid #FFFFFF;
+}
+.profession__section-image {
+  width: 5.9375rem;
+  height: 5.9375rem;
+}
+.profession__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.6875rem;
+}
+.profession__item {
+  width: calc(25% - 0.6875rem);
+}
+.profession__item-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 2.5rem 2.5rem 0 0;
+  display: block;
+}
+.profession__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.3125rem 1.53125rem 3.8125rem 1.53125rem;
+  gap: 0.625rem;
+  width: 100%;
+  height: 10em;
+  background-color: #FFFFFF;
+  border-radius: 0 0 2.5rem 2.5rem;
+}
+.profession__container-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  width: 100%;
+}
+.profession__container-text {
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  font-weight: 400;
+  width: 100%;
+  color: #171920;
+}
+
+@media (max-width: 1024px) {
+  .profession {
+    padding: 5.313rem 0;
+  }
+  .profession::after {
+    width: 9.938rem;
+    height: 9.938rem;
+  }
+  .profession__section {
+    row-gap: 1.313rem;
+  }
+  .profession__section-title {
+    font-size: 2.25rem;
+    line-height: 2.688rem;
+    padding: 1.25rem 1.875rem;
+    width: auto;
+    margin-bottom: 4.063rem;
+  }
+  .profession__section-image {
+    width: 4.938rem;
+    height: 4.938rem;
+  }
+  .profession__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .profession .profession__item {
+    width: calc(100% - 0.6875rem);
+    gap: 2.813rem;
+  }
+}
+@media (max-width: 460px) {
+  .profession {
+    padding: 2.188rem 0 6.625rem 0;
+  }
+  .profession::after {
+    background: url("/economics-rudn/assets/icons/flower-mobile.svg") no-repeat;
+    width: 5.498em;
+    bottom: 0rem;
+    right: 0rem;
+  }
+  .profession__container {
+    padding: 1.313rem 1.781rem 1.938rem;
+    gap: 0.625rem;
+  }
+  .profession__container-title {
+    line-height: 1.5rem;
+    font-size: 1.25rem;
+  }
+  .profession__section {
+    row-gap: 0.388rem;
+  }
+  .profession__section-title {
+    font-size: 1.513rem;
+    line-height: 1.813rem;
+    padding: 0.625rem 1.313rem;
+    width: auto;
+    margin-bottom: 0;
+    border-radius: 0.75rem;
+  }
+  .profession__section-image {
+    display: flex;
+    align-self: center;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .profession__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    border-radius: 2.5rem;
+    margin-top: 2.125rem;
+  }
+  .profession .profession__item {
+    width: 100%;
+    gap: 2.813rem;
+  }
+}
+.promo-credit {
+  position: relative;
+  padding: 5rem 0;
+  background: url("/economics-rudn/assets/icons/credit-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+.promo-credit__container {
+  padding: 0 2.4375rem;
+  display: flex;
+  gap: 1.9375rem;
+  flex-direction: column;
+  align-items: center;
+}
+.promo-credit__container h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.625rem;
+  text-align: center;
+  padding-bottom: 1.75rem;
+}
+.promo-credit__container .promo-credit__title {
+  position: relative;
+  display: inline-block;
+  width: fit-content;
+}
+.promo-credit__container .promo-credit__title img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 13.25rem;
+  height: auto;
+}
+.promo-credit__container .promo-credit-span {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.625rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.promo-credit__container .promo-credit-text {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.625rem;
+  margin-bottom: 0.5rem;
+}
+.promo-credit__container .promo-credit-marked {
+  display: inline-block;
+  position: relative;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.625rem;
+}
+.promo-credit__container .promo-credit-marked::before {
+  content: "";
+  position: absolute;
+  background-image: url("/economics-rudn/assets/icons/stripe.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 1.76rem;
+  bottom: -1.438rem;
+  left: 0;
+}
+.promo-credit__container p {
+  font-size: 2.25rem;
+  font-weight: 400;
+  line-height: 2.6875rem;
+  text-align: center;
+}
+.promo-credit button {
+  display: inline-block;
+  padding: 1rem 2.75rem;
+  background-color: #FFFFFF;
+  border-radius: 2.625rem;
+  border: none;
+  font-style: inherit;
+}
+.promo-credit a {
+  color: #000000;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.375rem;
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  .promo-credit {
+    padding: 3.219rem 0;
+  }
+  .promo-credit__container {
+    padding: 0 0.938rem;
+    gap: 1.063rem;
+  }
+  .promo-credit .promo-credit-span {
+    display: inline-block;
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 2.688rem;
+    text-align: center;
+    margin-bottom: 0.3rem;
+  }
+  .promo-credit .promo-credit-text {
+    display: inline-block;
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 2.688rem;
+    margin-bottom: 0.3rem;
+  }
+  .promo-credit .promo-credit-marked {
+    display: inline-block;
+    position: relative;
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 2.688rem;
+  }
+  .promo-credit .promo-credit-marked::before {
+    content: "";
+    position: absolute;
+    background-image: url("/economics-rudn/assets/icons/stripe.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 1.692rem;
+    bottom: -1.438rem;
+    left: 0;
+  }
+  .promo-credit p {
+    font-size: 1.5rem;
+    line-height: 1.813rem;
+  }
+  .promo-credit button {
+    padding: 1rem 2.688rem;
+  }
+  .promo-credit a {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+@media (max-width: 460px) {
+  .promo-credit {
+    padding: 3.375rem 0;
+    background: url("/economics-rudn/assets/img/credit-background-mobile.png");
+    background-size: cover;
+  }
+  .promo-credit__container {
+    padding: 0;
+    gap: 1.625rem;
+  }
+  .promo-credit .promo-credit-span {
+    display: inline-block;
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 2.688rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .promo-credit .promo-credit-text {
+    display: inline-block;
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 2.688rem;
+    margin-bottom: 0.3rem;
+  }
+  .promo-credit .promo-credit-marked {
+    display: inline-block;
+    position: relative;
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 2.688rem;
+  }
+  .promo-credit .promo-credit-marked::before {
+    content: "";
+    position: absolute;
+    background-image: url("/economics-rudn/assets/icons/stripe.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 1.692rem;
+    bottom: -1.438rem;
+    left: 0;
+  }
+  .promo-credit p {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+  .promo-credit button {
+    padding: 0.5rem 2.688rem;
+  }
+  .promo-credit a {
+    font-size: 1rem;
+    line-height: 1.188rem;
+  }
+}
+.contacts {
+  padding: 3.375rem 0 2.25rem 0;
+  background: #171920;
+}
+.contacts h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.625rem;
+  margin-bottom: 1.375rem;
+}
+.contacts__sections {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contacts__section {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  text-decoration: none;
+}
+.contacts__section-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.6875rem;
+  height: 3.75rem;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.contacts__section-text {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.8125rem;
+  color: #FFFFFF;
+}
+
+.phone {
+  background-image: url("/economics-rudn/assets/icons/phone.svg");
+}
+
+.mail {
+  background-image: url("/economics-rudn/assets/icons/mail.svg");
+}
+
+.place {
+  background-image: url("/economics-rudn/assets/icons/map.svg");
+}
+
+@media (max-width: 1024px) {
+  .contacts {
+    padding: 3.875rem 0 2.5rem;
+  }
+  .contacts h2 {
+    font-size: 2.25rem;
+    line-height: 2.688rem;
+    margin-bottom: 2.313rem;
+  }
+  .contacts__sections {
+    gap: 1rem;
+  }
+  .contacts__section {
+    gap: 1.75rem;
+  }
+  .contacts__section-icon {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+  .contacts__section-text {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 460px) {
+  .contacts {
+    padding: 1.875rem 0;
+  }
+  .contacts h2 {
+    font-size: 1.5rem;
+    line-height: 1.813rem;
+    margin-bottom: 1.813rem;
+  }
+  .contacts__sections {
+    gap: 1rem;
+  }
+  .contacts__section {
+    gap: 1.75rem;
+  }
+  .contacts__section-icon {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+  .contacts__section-text {
+    font-size: 1rem;
+    line-height: 1.188rem;
+  }
+}
+.footer {
+  padding: 3.8125rem 0 2.875rem 0;
+  background: #171920;
+}
+.footer__section {
+  display: flex;
+  justify-content: center;
+}
+.footer__section-link {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    padding: 2.875rem 0;
+  }
+  .footer__section-link {
+    font-size: 0.875rem;
+    line-height: 1.063rem;
+  }
+}
+@media (max-width: 460px) {
+  .footer {
+    padding: 2.25rem 0 1.563rem 0;
+  }
+  .footer__section-link {
+    font-size: 0.75rem;
+    line-height: 0.875rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

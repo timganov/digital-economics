@@ -1,0 +1,65 @@
+.what {
+  position: relative;
+  background-image: url('#{$base-url}/assets/icons/background-gradient.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: -0.875rem;
+    top: -13.6875rem;
+    width: 46rem;
+    height: 56.25rem;
+    background: url('#{$base-url}/assets/icons/metal-icon.svg') no-repeat;
+    background-size: contain;
+    z-index: 1;
+  }
+
+  &__text {
+    padding: 4.9375rem 0;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3.625rem;
+  }
+}
+
+
+@media (max-width: 1024px) {
+    .what {
+      
+      &::after {
+       width: 32.774rem;
+       height: 32.774rem;
+       right: -6.875rem;
+       top: -7.6875rem;
+      }
+
+      &__text {
+        padding: 2.688rem 0;
+        font-size: 2.25rem;
+        line-height: 2.688rem;
+      }
+
+      
+    }
+}
+
+@media (max-width: 460px) {
+  .what {
+    
+    &::after {
+     width: 11.374rem;
+     height: 11.374rem;
+     right: -2.875rem;
+     top: 3.3125rem;
+    }
+
+    &__text {
+      padding: 1.5rem 0;
+      font-size: 1.5rem;
+      line-height: 1.813rem;
+    }
+  }
+}

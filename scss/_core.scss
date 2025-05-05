@@ -1,0 +1,96 @@
+body {
+  font-family: 'TT Travels', sans-serif;
+}
+
+.container { 
+  @include min-max(320px, 100%); 
+}
+
+
+.wrap {
+  @include min-max(320px, 1660px);
+  width: 100%;
+  padding: 0 3.75rem;
+  box-sizing: border-box;
+}
+
+body, 
+html {
+  overflow-x: hidden;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  color: $white;
+}
+
+p, 
+span,
+a {
+  color: $white;
+}
+
+a {
+  text-decoration: none;
+ 
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .wrap {
+    padding: 0 6.375rem;
+  }
+
+}
+
+@media (max-width: 900px) {
+      html {
+        font-size: 80%;
+      }
+}
+
+@media (max-width: 730px) {
+  html {
+    font-size: 65%;
+  }
+}
+
+
+@media (max-width: 560px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 460px) {
+    html {
+      font-size: 100%;
+    }
+
+  .wrap {
+    padding: 0 2.813rem;
+  }
+
+  .learn-wrap {
+    padding: 0 1.813rem;
+  }
+
+  .credit-wrap {
+    padding: 0 1.375rem;
+  }
+
+}
+
