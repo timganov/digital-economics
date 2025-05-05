@@ -217,7 +217,7 @@ section {
   justify-content: flex-start;
   position: relative;
   background-size: cover;
-  background-image: url("/economics-rudn/assets/icons/intro-img.png");
+  background-image: url("/digital-economics/assets/icons/intro-img.png");
   background-repeat: no-repeat;
   background-position: right;
   padding-top: 13.3125rem;
@@ -231,7 +231,7 @@ section {
   margin-bottom: 3.5625rem;
 }
 .intro__link-icon.icon {
-  background-image: url("/economics-rudn/assets/icons/economics-icon.png");
+  background-image: url("/digital-economics/assets/icons/economics-icon.png");
 }
 .intro__link-icon {
   display: flex;
@@ -267,7 +267,7 @@ section {
 
 @media (max-width: 1024px) {
   .intro {
-    background-image: url("/economics-rudn/assets/img/intro-img__dekstop.png");
+    background-image: url("/digital-economics/assets/img/intro-img__dekstop.png");
     background-size: cover;
     padding-top: 12.813rem;
     padding-bottom: 6.125rem;
@@ -299,7 +299,7 @@ section {
 }
 @media (max-width: 460px) {
   .intro {
-    background-image: url("/economics-rudn/assets/img/intro-img__dekstop.png");
+    background-image: url("/digital-economics/assets/img/intro-img__dekstop.png");
     background-size: cover;
     padding-top: 1.125rem;
     padding-bottom: 3.125rem;
@@ -331,7 +331,7 @@ section {
 }
 .what {
   position: relative;
-  background-image: url("/economics-rudn/assets/icons/background-gradient.png");
+  background-image: url("/digital-economics/assets/icons/background-gradient.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -343,7 +343,7 @@ section {
   top: -13.6875rem;
   width: 46rem;
   height: 56.25rem;
-  background: url("/economics-rudn/assets/icons/metal-icon.svg") no-repeat;
+  background: url("/digital-economics/assets/icons/metal-icon.svg") no-repeat;
   background-size: contain;
   z-index: 1;
 }
@@ -523,7 +523,7 @@ section {
   top: 12.25rem;
   width: 27.4375rem;
   height: 27.5625rem;
-  background: url("/economics-rudn/assets/icons/metal-abstraction.svg") no-repeat;
+  background: url("/digital-economics/assets/icons/metal-abstraction.svg") no-repeat;
   background-size: contain;
   z-index: 1;
 }
@@ -596,7 +596,7 @@ section {
 .learn {
   position: relative;
   padding: 5rem 0;
-  background: url("/economics-rudn/assets/icons/vision-background.png");
+  background: url("/digital-economics/assets/icons/vision-background.png");
   background-size: cover;
   width: 100%;
   height: auto;
@@ -681,7 +681,7 @@ section {
 @media (max-width: 1024px) {
   .learn {
     padding: 3.75rem 0;
-    background: url("/economics-rudn/assets/img/vision-backgroud-mobile.png");
+    background: url("/digital-economics/assets/img/vision-backgroud-mobile.png");
     background-size: cover;
   }
   .learn__title {
@@ -764,7 +764,7 @@ section {
 .profession::after {
   content: "";
   position: absolute;
-  background: url("/economics-rudn/assets/icons/flower.svg") no-repeat;
+  background: url("/digital-economics/assets/icons/flower.svg") no-repeat;
   height: 10.5rem;
   width: 10.5rem;
   bottom: 0.625rem;
@@ -870,7 +870,7 @@ section {
     padding: 2.188rem 0 6.625rem 0;
   }
   .profession::after {
-    background: url("/economics-rudn/assets/icons/flower-mobile.svg") no-repeat;
+    background: url("/digital-economics/assets/icons/flower-mobile.svg") no-repeat;
     width: 5.498em;
     bottom: 0rem;
     right: 0rem;
@@ -915,7 +915,7 @@ section {
 .promo-credit {
   position: relative;
   padding: 5rem 0;
-  background: url("/economics-rudn/assets/icons/credit-background.png");
+  background: url("/digital-economics/assets/icons/credit-background.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -972,7 +972,7 @@ section {
 .promo-credit__container .promo-credit-marked::before {
   content: "";
   position: absolute;
-  background-image: url("/economics-rudn/assets/icons/stripe.svg");
+  background-image: url("/digital-economics/assets/icons/stripe.svg");
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
@@ -1035,7 +1035,7 @@ section {
   .promo-credit .promo-credit-marked::before {
     content: "";
     position: absolute;
-    background-image: url("/economics-rudn/assets/icons/stripe.svg");
+    background-image: url("/digital-economics/assets/icons/stripe.svg");
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
@@ -1058,7 +1058,7 @@ section {
 @media (max-width: 460px) {
   .promo-credit {
     padding: 3.375rem 0;
-    background: url("/economics-rudn/assets/img/credit-background-mobile.png");
+    background: url("/digital-economics/assets/img/credit-background-mobile.png");
     background-size: cover;
   }
   .promo-credit__container {
@@ -1090,7 +1090,7 @@ section {
   .promo-credit .promo-credit-marked::before {
     content: "";
     position: absolute;
-    background-image: url("/economics-rudn/assets/icons/stripe.svg");
+    background-image: url("/digital-economics/assets/icons/stripe.svg");
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
@@ -1149,15 +1149,15 @@ section {
 }
 
 .phone {
-  background-image: url("/economics-rudn/assets/icons/phone.svg");
+  background-image: url("/digital-economics/assets/icons/phone.svg");
 }
 
 .mail {
-  background-image: url("/economics-rudn/assets/icons/mail.svg");
+  background-image: url("/digital-economics/assets/icons/mail.svg");
 }
 
 .place {
-  background-image: url("/economics-rudn/assets/icons/map.svg");
+  background-image: url("/digital-economics/assets/icons/map.svg");
 }
 
 @media (max-width: 1024px) {
